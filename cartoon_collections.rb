@@ -23,6 +23,6 @@ def find_valid_calls(planeteer_calls)
   valid_call = "" 
   planeteer_calls.each{|i|
      if valid_calls.detect(i) == true then return i
-     else valid_call = nil
+     else return nil
   end}
 end
