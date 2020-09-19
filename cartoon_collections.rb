@@ -26,5 +26,5 @@ def find_valid_calls(planeteer_calls)
   #end}
   planeteer_calls.detect{|i|
      if valid_calls.include?(i) == true return i
-  }
+  end}
 end
