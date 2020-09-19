@@ -22,7 +22,7 @@ def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   valid_call = "" 
   planeteer_calls.each{|i|
-     if valid_calls.first(i).to_b == true then valid_call = i
+     if valid_calls.detect(i) == true then valid_call = i
      else valid_call = nil
   end}
   valid_call   
