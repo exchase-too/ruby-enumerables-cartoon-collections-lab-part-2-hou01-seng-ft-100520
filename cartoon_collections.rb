@@ -24,5 +24,8 @@ def find_valid_calls(planeteer_calls)
   #   if valid_calls.detect(i) == true then return i
   #   else return nil
   #end}
-  
+  planeteer_calls.detect{|i|
+     if valid_calls.detect(i) == true then return i
+     else return nil
+  end}
 end
