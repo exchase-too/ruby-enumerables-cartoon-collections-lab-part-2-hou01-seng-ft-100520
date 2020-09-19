@@ -25,6 +25,7 @@ def find_valid_calls(planeteer_calls)
   valid_call = "" 
   planeteer_calls.each{|i|
      if valid_calls.any?(i) == true then valid_call = i
+     else valid_call = nil
   end}
   valid_call   
 end
