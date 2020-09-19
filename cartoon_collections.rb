@@ -20,11 +20,9 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above 
-  # Return the first valid call found, or return nil if no valid calls are found
   valid_call = "" 
   planeteer_calls.each{|i|
-     if valid_calls.first(i) then valid_call = i
+     if valid_calls.first(i) == true then valid_call = i
      else valid_call = nil
   end}
   valid_call   
